@@ -103,3 +103,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const langButtons = document.querySelectorAll(".lang-btn");
+
+function setLanguage(lang) {
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-es][data-en]").forEach(el => {
+    el.textContent = el.dataset[lang];
+  });
+
+  langButtons.forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+
+  localStorage.setItem("language", lang);
+}
+
+langButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    setLanguage(btn.dataset.lang);
+  });
+});
+
+const savedLang = localStorage.getItem("language") || "es";
+setLanguage(savedLang);

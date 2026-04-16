@@ -17,23 +17,40 @@
   <!-- ─── NAV ──────────────────────────────────────────────────── -->
   <nav>
     <div class="nav-logo">rodrigo<span>.dev</span></div>
+
     <ul class="nav-links">
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+      <li><a href="#skills" data-es="Skills" data-en="Skills">Skills</a></li>
+      <li><a href="#about" data-es="Sobre mí" data-en="About me">Sobre mí</a></li>
+      <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Contactame</a>
+
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="es" type="button">ES</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+
+      <a href="./assets/cv/FullStack_CV_EN_RodrigoMoran.pdf" target="_blank" class="nav-cv">
+        CV
+      </a>
+    </div>
   </nav>
 
   <!-- ─── HERO ─────────────────────────────────────────────────── -->
   <section id="hero">
     <div class="hero-glow"></div>
     <div class="hero-inner">
-      <p class="hero-eyebrow">Disponible para oportunidades</p>
+      <p class="hero-eyebrow" data-es="Disponible para oportunidades" data-en="Open to opportunities">Disponible para
+        oportunidades</p>
       <h1 class="hero-name">Rodrigo<br><em>Moran</em></h1>
-      <p class="hero-role">Backend Developer · Full Stack con foco en Java y Spring Boot</p>
-      <p class="hero-desc">
+      <p class="hero-role" data-es="Backend Developer · Full Stack con foco en Java y Spring Boot"
+        data-en="Backend Developer · Full Stack focused on Java and Spring Boot">
+        Backend Developer · Full Stack con foco en Java y Spring Boot
+      </p>
+      <p class="hero-desc"
+        data-es="Desarrollo aplicaciones backend con foco en arquitectura, APIs REST y código mantenible. Me interesa construir sistemas bien pensados, que puedan crecer, integrarse con otros servicios y seguir siendo claros de mantener con el tiempo."
+        data-en="I build backend applications with a focus on architecture, REST APIs, and maintainable code. I'm interested in designing well-structured systems that can grow, integrate with other services, and remain easy to understand and maintain over time.">
         Desarrollo aplicaciones backend con foco en arquitectura, APIs REST y código mantenible. Me interesa construir
         sistemas bien pensados, que puedan crecer, integrarse con otros servicios y seguir siendo claros de mantener con
         el tiempo.
@@ -43,23 +60,28 @@
         <span class="stack-pill">Spring Boot</span>
         <span class="stack-pill">PostgreSQL</span>
         <span class="stack-pill">Docker</span>
-        <span class="stack-pill">Microservicios</span>
+        <span class="stack-pill">Microservices</span>
         <span class="stack-pill">Angular</span>
         <span class="stack-pill">APIs REST</span>
       </div>
       <div class="hero-ctas">
-        <a href="#projects" class="btn-primary">
+        <a href="#projects" class="btn-primary" data-es="Ver proyectos" data-en="View projects">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
           </svg>
-          Ver proyectos
+          <span data-es="Ver proyectos" data-en="View projects">Ver proyectos</span>
         </a>
+
         <a href="#contact" class="btn-secondary">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,12 2,6"></polyline>
           </svg>
-          Contacto
+          <span data-es="Contacto" data-en="Contact">Contacto</span>
+        </a>
+
+        <a href="./assets/cv/FullStack_CV_ES_RodrigoMoran.pdf" target="_blank" class="btn-secondary">
+          <span data-es="Ver CV" data-en="View resume">Ver CV</span>
         </a>
       </div>
     </div>
@@ -69,8 +91,13 @@
   <!-- ─── PROJECTS ──────────────────────────────────────────────── -->
   <section id="projects">
     <div class="container">
-      <p class="section-label">02 — Proyectos</p>
-      <h2 class="section-title">Proyectos destacados</h2>
+      <p class="section-label" data-es="02 — Proyectos" data-en="02 — Projects">
+        02 — Proyectos
+      </p>
+
+      <h2 class="section-title" data-es="Proyectos destacados" data-en="Featured projects">
+        Proyectos destacados
+      </h2>
 
       <div class="projects-grid">
 
@@ -87,22 +114,67 @@
               </a>
             </div>
           </div>
-          <h3 class="project-name">Civix</h3>
-          <p class="project-tagline">Reportes urbanos para municipios · Backend distribuido con microservicios</p>
-          <p class="project-desc">
+          <h3 class="project-name" data-es="Civix" data-en="Civix">
+            Civix
+          </h3>
+
+          <p class="project-tagline" data-es="Reportes urbanos para municipios · Backend distribuido con microservicios"
+            data-en="Urban issue reporting for municipalities · Distributed backend with microservices">
+            Reportes urbanos para municipios · Backend distribuido con microservicios
+          </p>
+
+          <p class="project-desc"
+            data-es="Plataforma pensada para que ciudadanos reporten problemas urbanos a su municipio, como baches, luminarias o incidencias en la vía pública. El proyecto fue una oportunidad para trabajar una arquitectura basada en microservicios, con servicios desacoplados, bases de datos separadas y una estructura preparada para crecer."
+            data-en="A platform designed for citizens to report urban issues to their municipality, such as potholes, street lighting problems, or public infrastructure incidents. This project was an opportunity to work with a microservices-based architecture, with decoupled services, separate databases, and a structure prepared to scale.">
             Plataforma pensada para que ciudadanos reporten problemas urbanos a su municipio, como baches, luminarias o
             incidencias en la vía pública. El proyecto fue una oportunidad para trabajar una arquitectura basada en
             microservicios, con servicios desacoplados, bases de datos separadas y una estructura preparada para crecer.
           </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div class="project-arch">
-            <p class="project-arch-title">Decisiones de arquitectura</p>
+            <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
+              Decisiones de arquitectura
+            </p>
+
             <div class="arch-list">
-              <span class="arch-item">API Gateway centraliza autenticación y enrutamiento</span>
-              <span class="arch-item">Auth Service independiente con JWT — no acoplado al negocio</span>
-              <span class="arch-item">User Service y Report Service con bases de datos separadas (PostgreSQL por
-                servicio)</span>
-              <span class="arch-item">Docker Compose orquesta el ambiente completo con un solo comando</span>
-              <span class="arch-item">Contratos via DTOs — ningún servicio expone entidades internas</span>
+              <span class="arch-item" data-es="API Gateway centraliza autenticación y enrutamiento"
+                data-en="API Gateway centralizes authentication and routing">
+                API Gateway centraliza autenticación y enrutamiento
+              </span>
+
+              <span class="arch-item" data-es="Auth Service independiente con JWT — no acoplado al negocio"
+                data-en="Independent Auth Service using JWT — not coupled to business logic">
+                Auth Service independiente con JWT — no acoplado al negocio
+              </span>
+
+              <span class="arch-item"
+                data-es="User Service y Report Service con bases de datos separadas (PostgreSQL por servicio)"
+                data-en="User Service and Report Service with separate databases (PostgreSQL per service)">
+                User Service y Report Service con bases de datos separadas (PostgreSQL por servicio)
+              </span>
+
+              <span class="arch-item" data-es="Docker Compose orquesta el ambiente completo con un solo comando"
+                data-en="Docker Compose orchestrates the entire environment with a single command">
+                Docker Compose orquesta el ambiente completo con un solo comando
+              </span>
+
+              <span class="arch-item" data-es="Contratos via DTOs — ningún servicio expone entidades internas"
+                data-en="Contracts via DTOs — no service exposes internal entities">
+                Contratos via DTOs — ningún servicio expone entidades internas
+              </span>
             </div>
           </div>
           <div class="project-tech">
@@ -131,21 +203,50 @@
               </a>
             </div>
           </div>
-          <h3 class="project-name">CasaAgenda</h3>
-          <p class="project-tagline">Sistema de gestión de alquileres temporales · Angular + Spring Boot</p>
-          <p class="project-desc">
+          <h3 class="project-name" data-es="CasaAgenda" data-en="CasaAgenda">
+            CasaAgenda
+          </h3>
+
+          <p class="project-tagline" data-es="Sistema de gestión de alquileres temporales · Angular + Spring Boot"
+            data-en="Short-term rental management system · Angular + Spring Boot">
+            Sistema de gestión de alquileres temporales · Angular + Spring Boot
+          </p>
+
+          <p class="project-desc"
+            data-es="Aplicación para gestionar propiedades y alquileres temporales desde un solo lugar: permite registrar inmuebles, administrar reservas, manejar imágenes y centralizar la información del negocio. El backend está desarrollado en Spring Boot con APIs REST y arquitectura en capas, mientras que el frontend en Angular permite una interacción fluida y desacoplada del dominio."
+            data-en="An application to manage properties and short-term rentals from a single place: it allows registering properties, managing bookings, handling images, and centralizing business data. The backend is built with Spring Boot using REST APIs and layered architecture, while the Angular frontend provides a smooth and decoupled user experience.">
             Aplicación para gestionar propiedades y alquileres temporales desde un solo lugar: permite registrar
             inmuebles, administrar reservas, manejar imágenes y centralizar la información del negocio. El backend está
             desarrollado en Spring Boot con APIs REST y arquitectura en capas, mientras que el frontend en Angular
             permite una interacción fluida y desacoplada del dominio.
           </p>
+
           <div class="project-arch">
-            <p class="project-arch-title">Stack técnico</p>
+            <p class="project-arch-title" data-es="Stack técnico" data-en="Technical stack">
+              Stack técnico
+            </p>
+
             <div class="arch-list">
-              <span class="arch-item">Spring Boot con arquitectura por capas (Controller / Service / Repository)</span>
-              <span class="arch-item">DTOs como contratos entre capas — sin exponer entidades JPA</span>
-              <span class="arch-item">Angular con Signals y standalone components (no NgModules)</span>
-              <span class="arch-item">Subida y manejo de imágenes con almacenamiento persistente</span>
+              <span class="arch-item"
+                data-es="Spring Boot con arquitectura por capas (Controller / Service / Repository)"
+                data-en="Spring Boot with layered architecture (Controller / Service / Repository)">
+                Spring Boot con arquitectura por capas (Controller / Service / Repository)
+              </span>
+
+              <span class="arch-item" data-es="DTOs como contratos entre capas — sin exponer entidades JPA"
+                data-en="DTOs as contracts between layers — without exposing JPA entities">
+                DTOs como contratos entre capas — sin exponer entidades JPA
+              </span>
+
+              <span class="arch-item" data-es="Angular con Signals y standalone components (no NgModules)"
+                data-en="Angular with Signals and standalone components (no NgModules)">
+                Angular con Signals y standalone components (no NgModules)
+              </span>
+
+              <span class="arch-item" data-es="Subida y manejo de imágenes con almacenamiento persistente"
+                data-en="Image upload and management with persistent storage">
+                Subida y manejo de imágenes con almacenamiento persistente
+              </span>
             </div>
           </div>
           <div class="project-tech">
@@ -172,28 +273,56 @@
               </a>
             </div>
           </div>
-          <h3 class="project-name">Decision Platform</h3>
-          <p class="project-tagline">Reglas de negocio versionadas · Arquitectura desacoplada para decisiones dinámicas
+          <h3 class="project-name" data-es="Decision Platform" data-en="Decision Platform">
+            Decision Platform
+          </h3>
+
+          <p class="project-tagline"
+            data-es="Reglas de negocio versionadas · Arquitectura desacoplada para decisiones dinámicas"
+            data-en="Versioned business rules · Decoupled architecture for dynamic decision-making">
+            Reglas de negocio versionadas · Arquitectura desacoplada para decisiones dinámicas
           </p>
-          <p class="project-desc">
+
+          <p class="project-desc"
+            data-es="Plataforma diseñada para gestionar y ejecutar reglas de negocio de forma desacoplada. La idea es permitir que decisiones como validaciones, scoring o evaluaciones de fraude puedan evolucionar con versionado, trazabilidad y una arquitectura preparada para sistemas distribuidos."
+            data-en="A platform designed to manage and execute business rules in a decoupled way. The goal is to allow decisions such as validations, scoring, or fraud detection to evolve with versioning, traceability, and an architecture prepared for distributed systems.">
             Plataforma diseñada para gestionar y ejecutar reglas de negocio de forma desacoplada. La idea es permitir
             que decisiones como validaciones, scoring o evaluaciones de fraude puedan evolucionar con versionado,
             trazabilidad y una arquitectura preparada para sistemas distribuidos.
           </p>
+
           <div class="project-arch">
-            <p class="project-arch-title">Decisiones de arquitectura</p>
+            <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
+              Decisiones de arquitectura
+            </p>
+
             <div class="arch-list">
-              <span class="arch-item">Rule Service y Decision Service desacoplados — cada uno con su
-                responsabilidad</span>
-              <span class="arch-item">Audit Service independiente con traceId para trazabilidad end-to-end</span>
-              <span class="arch-item">Versionado de reglas — cambios sin afectar decisiones históricas</span>
-              <span class="arch-item">Explainability: cada decisión devuelve las reglas que la determinaron</span>
+              <span class="arch-item"
+                data-es="Rule Service y Decision Service desacoplados — cada uno con su responsabilidad"
+                data-en="Rule Service and Decision Service are decoupled — each with its own responsibility">
+                Rule Service y Decision Service desacoplados — cada uno con su responsabilidad
+              </span>
+
+              <span class="arch-item" data-es="Audit Service independiente con traceId para trazabilidad end-to-end"
+                data-en="Independent Audit Service with traceId for end-to-end traceability">
+                Audit Service independiente con traceId para trazabilidad end-to-end
+              </span>
+
+              <span class="arch-item" data-es="Versionado de reglas — cambios sin afectar decisiones históricas"
+                data-en="Rule versioning — changes without affecting historical decisions">
+                Versionado de reglas — cambios sin afectar decisiones históricas
+              </span>
+
+              <span class="arch-item" data-es="Explainability: cada decisión devuelve las reglas que la determinaron"
+                data-en="Explainability: each decision returns the rules that determined it">
+                Explainability: cada decisión devuelve las reglas que la determinaron
+              </span>
             </div>
           </div>
           <div class="project-tech">
             <span class="tech-tag">Java</span>
             <span class="tech-tag">Spring Boot</span>
-            <span class="tech-tag">Microservicios</span>
+            <span class="tech-tag">Microservices</span>
             <span class="tech-tag">PostgreSQL</span>
             <span class="tech-tag">Redis</span>
             <span class="tech-tag">Kafka</span>
@@ -209,92 +338,155 @@
   <!-- ─── SKILLS ────────────────────────────────────────────────── -->
   <section id="skills">
     <div class="container">
-      <p class="section-label">03 — Skills</p>
-      <h2 class="section-title">Stack técnico</h2>
+      <p class="section-label" data-es="03 — Skills" data-en="03 — Skills">
+        03 — Skills
+      </p>
+
+      <h2 class="section-title" data-es="Stack técnico" data-en="Tech stack">
+        Stack técnico
+      </h2>
 
       <div class="skills-grid">
 
+        <!-- BACKEND -->
         <div class="skill-group fade-in">
           <div class="skill-group-header">
             <div class="skill-group-icon">⚙️</div>
             <div>
-              <div class="skill-group-title">Backend</div>
-              <div class="skill-group-sub">Foco principal</div>
+              <div class="skill-group-title" data-es="Backend" data-en="Backend">
+                Backend
+              </div>
+
+              <div class="skill-group-sub" data-es="Foco principal" data-en="Main focus">
+                Foco principal
+              </div>
             </div>
           </div>
+
           <div class="skill-items">
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Java & Spring Boot</span><span
-                  class="skill-level">Avanzado</span></div>
-              <div class="skill-bar">
-                <div class="skill-bar-fill" style="width:85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">APIs REST</span><span class="skill-level">Avanzado</span>
+              <div class="skill-row">
+                <span class="skill-name">Java & Spring Boot</span>
+                <span class="skill-level" data-es="Avanzado" data-en="Advanced">
+                  Avanzado
+                </span>
               </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:85%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Microservicios</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">APIs REST</span>
+                <span class="skill-level" data-es="Avanzado" data-en="Advanced">
+                  Avanzado
+                </span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width:85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name" data-es="Microservicios" data-en="Microservices">
+                  Microservicios
+                </span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:72%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">JUnit / Mockito</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">JUnit / Mockito</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:65%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Clean Architecture</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">Clean Architecture</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:68%"></div>
               </div>
             </div>
-
           </div>
         </div>
 
+        <!-- DATA & DEVOPS -->
         <div class="skill-group fade-in">
           <div class="skill-group-header">
             <div class="skill-group-icon">🗄️</div>
             <div>
-              <div class="skill-group-title">Datos & DevOps</div>
-              <div class="skill-group-sub">Infraestructura</div>
+              <div class="skill-group-title" data-es="Datos & DevOps" data-en="Data & DevOps">
+                Datos & DevOps
+              </div>
+
+              <div class="skill-group-sub" data-es="Infraestructura" data-en="Infrastructure">
+                Infraestructura
+              </div>
             </div>
           </div>
+
           <div class="skill-items">
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">PostgreSQL / SQL</span><span
-                  class="skill-level">Avanzado</span></div>
+              <div class="skill-row">
+                <span class="skill-name">PostgreSQL / SQL</span>
+                <span class="skill-level" data-es="Avanzado" data-en="Advanced">
+                  Avanzado
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:80%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Docker</span><span class="skill-level">Intermedio</span>
+              <div class="skill-row">
+                <span class="skill-name">Docker</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
               </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:72%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Docker Compose</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">Docker Compose</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:70%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Git / GitHub</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:75%"></div>
               </div>
@@ -302,32 +494,53 @@
           </div>
         </div>
 
+        <!-- FRONTEND -->
         <div class="skill-group fade-in">
           <div class="skill-group-header">
             <div class="skill-group-icon">🖥️</div>
             <div>
-              <div class="skill-group-title">Frontend</div>
-              <div class="skill-group-sub">Complementario</div>
+              <div class="skill-group-title" data-es="Frontend" data-en="Frontend">
+                Frontend
+              </div>
+
+              <div class="skill-group-sub" data-es="Complementario" data-en="Complementary">
+                Complementario
+              </div>
             </div>
           </div>
+
           <div class="skill-items">
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Angular</span><span class="skill-level">Intermedio</span>
+              <div class="skill-row">
+                <span class="skill-name">Angular</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
               </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:70%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">HTML / CSS</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:72%"></div>
               </div>
             </div>
+
             <div class="skill-item">
-              <div class="skill-row"><span class="skill-name">Bootstrap</span><span
-                  class="skill-level">Intermedio</span></div>
+              <div class="skill-row">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
+                  Intermedio
+                </span>
+              </div>
               <div class="skill-bar">
                 <div class="skill-bar-fill" style="width:65%"></div>
               </div>
@@ -343,46 +556,75 @@
   <section id="about" class="section-alt">
     <div class="container">
       <div class="about-inner">
+
         <div class="about-text fade-in">
-          <p class="section-label">04 — Sobre mí</p>
-          <h2 class="section-title">Quién soy</h2>
-          <p>
+          <p class="section-label" data-es="04 — Sobre mí" data-en="04 — About">
+            04 — Sobre mí
+          </p>
+
+          <h2 class="section-title" data-es="Quién soy" data-en="About me">
+            Quién soy
+          </h2>
+
+          <p data-es="Soy egresado de la Tecnicatura Universitaria en Programación (UTN Córdoba) y vengo construyendo proyectos donde priorizo no solo que algo funcione, sino también cómo está diseñado por dentro."
+            data-en="I graduated from the University Programming Degree (UTN Córdoba), and I’ve been building projects where I focus not only on making things work, but also on how they are designed internally.">
             Soy egresado de la <strong>Tecnicatura Universitaria en Programación (UTN Córdoba)</strong> y vengo
             construyendo proyectos donde priorizo no solo que algo funcione, sino también cómo está diseñado por dentro.
           </p>
-          <p>
+
+          <p data-es="Me interesa especialmente el backend porque disfruto pensar la estructura de los sistemas: cómo circulan los datos, cómo se definen los contratos entre servicios y qué decisiones técnicas hacen que una aplicación sea más clara, mantenible y escalable."
+            data-en="I'm especially interested in backend development because I enjoy thinking about system design: how data flows, how contracts between services are defined, and which technical decisions make an application clearer, more maintainable, and scalable.">
             Me interesa especialmente el backend porque disfruto pensar la estructura de los sistemas: cómo circulan los
             datos, cómo se definen los contratos entre servicios y qué decisiones técnicas hacen que una aplicación sea
             más clara, mantenible y escalable.
           </p>
-          <p>
+
+          <p data-es="Actualmente también estoy comenzando un curso anual de inglés en la Facultad de Lenguas (UNC) para mejorar mi nivel y poder trabajar en entornos técnicos donde el idioma es clave."
+            data-en="I am currently starting a year-long English course at the Faculty of Languages (UNC) to improve my level and be able to work in technical environments where the language is essential.">
             Actualmente también estoy comenzando un curso anual de inglés en la Facultad de Lenguas (UNC) para mejorar
             mi nivel y poder trabajar en entornos técnicos donde el idioma es clave.
           </p>
-          <p>
+
+          <p data-es="Estoy buscando mi primera oportunidad profesional en IT para seguir creciendo dentro de un equipo, aprender de entornos reales de desarrollo y aportar desde el primer día con una base sólida en Java, Spring Boot, SQL y diseño de APIs."
+            data-en="I’m looking for my first professional opportunity in IT to continue growing within a team, learn from real development environments, and contribute from day one with a solid foundation in Java, Spring Boot, SQL, and API design.">
             Estoy buscando mi primera oportunidad profesional en IT para seguir creciendo dentro de un equipo, aprender
             de entornos reales de desarrollo y aportar desde el primer día con una base sólida en Java, Spring Boot, SQL
             y diseño de APIs.
           </p>
         </div>
+
         <div class="about-stats fade-in">
+
           <div class="stat-card">
-            <div class="stat-num">3</div>
-            <div class="stat-label">Proyectos en GitHub</div>
+            <div class="stat-num">3+</div>
+            <div class="stat-label" data-es="Tecnologías frontend" data-en="Frontend technologies">
+              Tecnologías frontend
+            </div>
           </div>
+
           <div class="stat-card">
             <div class="stat-num">UTN</div>
-            <div class="stat-label">Graduado Córdoba</div>
+            <div class="stat-label" data-es="Graduado Córdoba" data-en="Graduated — Córdoba">
+              Graduado Córdoba
+            </div>
           </div>
+
           <div class="stat-card">
             <div class="stat-num">5+</div>
-            <div class="stat-label">Tecnologías backend</div>
+            <div class="stat-label" data-es="Tecnologías backend" data-en="Backend technologies">
+              Tecnologías backend
+            </div>
           </div>
+
           <div class="stat-card">
             <div class="stat-num">CBA</div>
-            <div class="stat-label">Córdoba, Argentina</div>
+            <div class="stat-label" data-es="Córdoba, Argentina" data-en="Córdoba, Argentina">
+              Córdoba, Argentina
+            </div>
           </div>
+
         </div>
+
       </div>
     </div>
   </section>
@@ -391,37 +633,54 @@
   <section id="contact">
     <div class="container">
       <div class="contact-inner">
-        <p class="section-label centered">05 — Contacto</p>
-        <h2 class="section-title">Trabajemos juntos</h2>
-        <p>
+
+        <p class="section-label centered" data-es="05 — Contacto" data-en="05 — Contact">
+          05 — Contacto
+        </p>
+
+        <h2 class="section-title" data-es="Trabajemos juntos" data-en="Let’s work together">
+          Trabajemos juntos
+        </h2>
+
+        <p data-es="Si estás armando un equipo backend o full stack y te interesa sumar a alguien con base sólida en Java, Spring Boot y diseño de APIs, me gustaría conversar. Estoy disponible para entrevistas y nuevos desafíos."
+          data-en="If you're building a backend or full stack team and are looking for someone with a solid foundation in Java, Spring Boot, and API design, I’d be glad to connect. I'm available for interviews and new challenges.">
           Si estás armando un equipo backend o full stack y te interesa sumar a alguien con base sólida en Java, Spring
           Boot y diseño de APIs, me gustaría conversar. Estoy disponible para entrevistas y nuevos desafíos.
         </p>
+
         <div class="contact-links">
           <a href="mailto:rodrigomoran143@gmail.com" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,12 2,6"></polyline>
             </svg>
-            Email
+            <span data-es="Email" data-en="Email">Email</span>
           </a>
+
           <a href="https://www.linkedin.com/in/rodrigo-moran99/" target="_blank" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
-            LinkedIn
+            <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
           </a>
+
           <a href="https://github.com/rodri-moran" target="_blank" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
             </svg>
-            GitHub
+            <span data-es="GitHub" data-en="GitHub">GitHub</span>
           </a>
         </div>
-        <p class="contact-email">O escribime directo: <a
-            href="mailto:rodrigomoran143@gmail.com">rodrigomoran143@gmail.com</a></p>
+
+        <p class="contact-email">
+          <span data-es="O escribime directo:" data-en="Or reach out directly:">
+            O escribime directo:
+          </span>
+          <a href="mailto:rodrigomoran143@gmail.com">rodrigomoran143@gmail.com</a>
+        </p>
+
       </div>
     </div>
   </section>
