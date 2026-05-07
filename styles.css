@@ -663,3 +663,238 @@ footer {
     padding: .45rem .8rem;
   }
 }
+/* ─── PROJECT CAROUSEL ────────────────────────────────────────── */
+.project-carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 0 1.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+  overflow: hidden;
+  background: #f1f5f9;
+  aspect-ratio: 16 / 9;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform .38s cubic-bezier(.4, 0, .2, 1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #f1f5f9;
+}
+
+/* Botones prev / next */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color .2s, color .2s, background .2s, transform .15s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 2;
+  line-height: 1;
+  padding: 0;
+}
+
+.carousel-btn:hover {
+  border-color: var(--green);
+  color: var(--green-dk);
+  background: rgba(255, 255, 255, 0.97);
+  transform: translateY(-50%) scale(1.07);
+}
+
+.carousel-btn.prev { left: .65rem; }
+.carousel-btn.next { right: .65rem; }
+
+.carousel-btn:disabled {
+  display: none;
+}
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: .6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: .4rem;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  transition: background .2s, transform .2s;
+}
+
+.carousel-dot.active {
+  background: var(--green);
+  transform: scale(1.25);
+}
+
+.carousel-dot:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 480px) {
+  .carousel-btn {
+    width: 28px;
+    height: 28px;
+    font-size: .8rem;
+  }
+}
+/* ─── PROJECT IMAGE LIGHTBOX ─────────────────────────────────── */
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1.2rem;
+}
+
+.image-lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  width: min(1100px, 100%);
+  height: min(82vh, 720px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close,
+.lightbox-btn {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, transform .15s, color .2s;
+}
+
+.lightbox-close:hover,
+.lightbox-btn:hover {
+  background: #ffffff;
+  color: var(--green-dk);
+  transform: scale(1.06);
+}
+
+.lightbox-close {
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.lightbox-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+.lightbox-btn:hover {
+  transform: translateY(-50%) scale(1.06);
+}
+
+.lightbox-prev {
+  left: 1rem;
+}
+
+.lightbox-next {
+  right: 1rem;
+}
+
+/* Para que se note que la imagen del carrusel se puede abrir */
+.carousel-img {
+  cursor: zoom-in;
+}
+
+@media (max-width: 768px) {
+  .image-lightbox {
+    padding: .8rem;
+  }
+
+  .lightbox-content {
+    width: 100%;
+    height: 78vh;
+  }
+
+  .lightbox-close {
+    top: .75rem;
+    right: .75rem;
+    width: 36px;
+    height: 36px;
+  }
+
+  .lightbox-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .lightbox-prev {
+    left: .6rem;
+  }
+
+  .lightbox-next {
+    right: .6rem;
+  }
+}

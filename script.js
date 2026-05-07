@@ -128,3 +128,131 @@ langButtons.forEach(btn => {
 
 const savedLang = localStorage.getItem("language") || "es";
 setLanguage(savedLang);
+
+/* ─── PROJECT CAROUSELS ───────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  const lightbox = document.getElementById('imageLightbox');
+  const lightboxImg = lightbox?.querySelector('.lightbox-img');
+  const lightboxClose = lightbox?.querySelector('.lightbox-close');
+  const lightboxPrev = lightbox?.querySelector('.lightbox-prev');
+  const lightboxNext = lightbox?.querySelector('.lightbox-next');
+
+  let activeImages = [];
+  let activeIndex = 0;
+  let touchStartX = 0;
+
+  function openLightbox(images, index) {
+    if (!lightbox || !lightboxImg) return;
+
+    activeImages = images;
+    activeIndex = index;
+
+    updateLightboxImage();
+
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function updateLightboxImage() {
+    const img = activeImages[activeIndex];
+    if (!img || !lightboxImg) return;
+
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt || 'Imagen del proyecto';
+  }
+
+  function goLightboxTo(index) {
+    if (!activeImages.length) return;
+
+    activeIndex = (index + activeImages.length) % activeImages.length;
+    updateLightboxImage();
+  }
+
+  document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const track   = carousel.querySelector('.carousel-track');
+    const slides  = carousel.querySelectorAll('.carousel-slide');
+    const btnPrev = carousel.querySelector('.carousel-btn.prev');
+    const btnNext = carousel.querySelector('.carousel-btn.next');
+    const dotsEl  = carousel.querySelector('.carousel-dots');
+    const images  = Array.from(carousel.querySelectorAll('.carousel-img'));
+
+    let current = 0;
+
+    images.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        openLightbox(images, index);
+      });
+    });
+
+
+    if (slides.length <= 1) {
+      if (btnPrev) btnPrev.disabled = true;
+      if (btnNext) btnNext.disabled = true;
+      return;
+    }
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Ver imagen ${i + 1}`);
+      dot.setAttribute('role', 'tab');
+      dot.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(dot);
+    });
+
+    const dots = dotsEl.querySelectorAll('.carousel-dot');
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    btnPrev.addEventListener('click', () => goTo(current - 1));
+    btnNext.addEventListener('click', () => goTo(current + 1));
+  });
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightboxPrev?.addEventListener('click', () => goLightboxTo(activeIndex - 1));
+  lightboxNext?.addEventListener('click', () => goLightboxTo(activeIndex + 1));
+
+  lightbox?.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox?.classList.contains('active')) return;
+
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') goLightboxTo(activeIndex - 1);
+    if (e.key === 'ArrowRight') goLightboxTo(activeIndex + 1);
+  });
+
+  lightbox?.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  lightbox?.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) < 50) return;
+
+    if (diff > 0) {
+      goLightboxTo(activeIndex + 1);
+    } else {
+      goLightboxTo(activeIndex - 1);
+    }
+  });
+});

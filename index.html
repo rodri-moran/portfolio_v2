@@ -114,14 +114,34 @@
               </a>
             </div>
           </div>
-          <h3 class="project-name" data-es="Civix" data-en="Civix">
-            Civix
-          </h3>
+
+          <h3 class="project-name" data-es="Civix" data-en="Civix">Civix</h3>
 
           <p class="project-tagline" data-es="Reportes urbanos para municipios · Backend distribuido con microservicios"
             data-en="Urban issue reporting for municipalities · Distributed backend with microservices">
             Reportes urbanos para municipios · Backend distribuido con microservicios
           </p>
+
+          <!-- Carrusel Civix -->
+          <div class="project-carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/civix/civix-1.png" alt="Civix dashboard screenshot"
+                  loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/civix/civix-2.png" alt="Civix urban reports view"
+                  loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/civix/civix-3.png" alt="Civix authentication flow"
+                  loading="lazy" />
+              </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Imagen anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Imagen siguiente">&#8594;</button>
+            <div class="carousel-dots" role="tablist"></div>
+          </div>
 
           <p class="project-desc"
             data-es="Plataforma pensada para que ciudadanos reporten problemas urbanos a su municipio, como baches, luminarias o incidencias en la vía pública. El proyecto fue una oportunidad para trabajar una arquitectura basada en microservicios, con servicios desacoplados, bases de datos separadas y una estructura preparada para crecer."
@@ -131,52 +151,30 @@
             microservicios, con servicios desacoplados, bases de datos separadas y una estructura preparada para crecer.
           </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
           <div class="project-arch">
             <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
               Decisiones de arquitectura
             </p>
-
             <div class="arch-list">
               <span class="arch-item" data-es="API Gateway centraliza autenticación y enrutamiento"
-                data-en="API Gateway centralizes authentication and routing">
-                API Gateway centraliza autenticación y enrutamiento
-              </span>
-
+                data-en="API Gateway centralizes authentication and routing">API Gateway centraliza autenticación y
+                enrutamiento</span>
               <span class="arch-item" data-es="Auth Service independiente con JWT — no acoplado al negocio"
-                data-en="Independent Auth Service using JWT — not coupled to business logic">
-                Auth Service independiente con JWT — no acoplado al negocio
-              </span>
-
+                data-en="Independent Auth Service using JWT — not coupled to business logic">Auth Service independiente
+                con JWT — no acoplado al negocio</span>
               <span class="arch-item"
                 data-es="User Service y Report Service con bases de datos separadas (PostgreSQL por servicio)"
-                data-en="User Service and Report Service with separate databases (PostgreSQL per service)">
-                User Service y Report Service con bases de datos separadas (PostgreSQL por servicio)
-              </span>
-
+                data-en="User Service and Report Service with separate databases (PostgreSQL per service)">User Service
+                y Report Service con bases de datos separadas (PostgreSQL por servicio)</span>
               <span class="arch-item" data-es="Docker Compose orquesta el ambiente completo con un solo comando"
-                data-en="Docker Compose orchestrates the entire environment with a single command">
-                Docker Compose orquesta el ambiente completo con un solo comando
-              </span>
-
+                data-en="Docker Compose orchestrates the entire environment with a single command">Docker Compose
+                orquesta el ambiente completo con un solo comando</span>
               <span class="arch-item" data-es="Contratos via DTOs — ningún servicio expone entidades internas"
-                data-en="Contracts via DTOs — no service exposes internal entities">
-                Contratos via DTOs — ningún servicio expone entidades internas
-              </span>
+                data-en="Contracts via DTOs — no service exposes internal entities">Contratos via DTOs — ningún servicio
+                expone entidades internas</span>
             </div>
           </div>
+
           <div class="project-tech">
             <span class="tech-tag">Java 17</span>
             <span class="tech-tag">Spring Boot</span>
@@ -203,14 +201,34 @@
               </a>
             </div>
           </div>
-          <h3 class="project-name" data-es="CasaAgenda" data-en="CasaAgenda">
-            CasaAgenda
-          </h3>
+
+          <h3 class="project-name" data-es="CasaAgenda" data-en="CasaAgenda">CasaAgenda</h3>
 
           <p class="project-tagline" data-es="Sistema de gestión de alquileres temporales · Angular + Spring Boot"
             data-en="Short-term rental management system · Angular + Spring Boot">
             Sistema de gestión de alquileres temporales · Angular + Spring Boot
           </p>
+
+          <!-- Carrusel CasaAgenda -->
+          <div class="project-carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/casaagenda/casaagenda-1.png"
+                  alt="CasaAgenda property management screenshot" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/casaagenda/casaagenda-2.png"
+                  alt="CasaAgenda booking calendar screenshot" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/casaagenda/casaagenda-3.png"
+                  alt="CasaAgenda image upload screenshot" loading="lazy" />
+              </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Imagen anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Imagen siguiente">&#8594;</button>
+            <div class="carousel-dots" role="tablist"></div>
+          </div>
 
           <p class="project-desc"
             data-es="Aplicación para gestionar propiedades y alquileres temporales desde un solo lugar: permite registrar inmuebles, administrar reservas, manejar imágenes y centralizar la información del negocio. El backend está desarrollado en Spring Boot con APIs REST y arquitectura en capas, mientras que el frontend en Angular permite una interacción fluida y desacoplada del dominio."
@@ -222,33 +240,24 @@
           </p>
 
           <div class="project-arch">
-            <p class="project-arch-title" data-es="Stack técnico" data-en="Technical stack">
-              Stack técnico
-            </p>
-
+            <p class="project-arch-title" data-es="Stack técnico" data-en="Technical stack">Stack técnico</p>
             <div class="arch-list">
               <span class="arch-item"
                 data-es="Spring Boot con arquitectura por capas (Controller / Service / Repository)"
-                data-en="Spring Boot with layered architecture (Controller / Service / Repository)">
-                Spring Boot con arquitectura por capas (Controller / Service / Repository)
-              </span>
-
+                data-en="Spring Boot with layered architecture (Controller / Service / Repository)">Spring Boot con
+                arquitectura por capas (Controller / Service / Repository)</span>
               <span class="arch-item" data-es="DTOs como contratos entre capas — sin exponer entidades JPA"
-                data-en="DTOs as contracts between layers — without exposing JPA entities">
-                DTOs como contratos entre capas — sin exponer entidades JPA
-              </span>
-
+                data-en="DTOs as contracts between layers — without exposing JPA entities">DTOs como contratos entre
+                capas — sin exponer entidades JPA</span>
               <span class="arch-item" data-es="Angular con Signals y standalone components (no NgModules)"
-                data-en="Angular with Signals and standalone components (no NgModules)">
-                Angular con Signals y standalone components (no NgModules)
-              </span>
-
+                data-en="Angular with Signals and standalone components (no NgModules)">Angular con Signals y standalone
+                components (no NgModules)</span>
               <span class="arch-item" data-es="Subida y manejo de imágenes con almacenamiento persistente"
-                data-en="Image upload and management with persistent storage">
-                Subida y manejo de imágenes con almacenamiento persistente
-              </span>
+                data-en="Image upload and management with persistent storage">Subida y manejo de imágenes con
+                almacenamiento persistente</span>
             </div>
           </div>
+
           <div class="project-tech">
             <span class="tech-tag">Java</span>
             <span class="tech-tag">Spring Boot</span>
@@ -273,9 +282,8 @@
               </a>
             </div>
           </div>
-          <h3 class="project-name" data-es="Decision Platform" data-en="Decision Platform">
-            Decision Platform
-          </h3>
+
+          <h3 class="project-name" data-es="Decision Platform" data-en="Decision Platform">Decision Platform</h3>
 
           <p class="project-tagline"
             data-es="Reglas de negocio versionadas · Arquitectura desacoplada para decisiones dinámicas"
@@ -283,54 +291,93 @@
             Reglas de negocio versionadas · Arquitectura desacoplada para decisiones dinámicas
           </p>
 
-          <p class="project-desc"
-            data-es="Plataforma diseñada para gestionar y ejecutar reglas de negocio de forma desacoplada. La idea es permitir que decisiones como validaciones, scoring o evaluaciones de fraude puedan evolucionar con versionado, trazabilidad y una arquitectura preparada para sistemas distribuidos."
-            data-en="A platform designed to manage and execute business rules in a decoupled way. The goal is to allow decisions such as validations, scoring, or fraud detection to evolve with versioning, traceability, and an architecture prepared for distributed systems.">
-            Plataforma diseñada para gestionar y ejecutar reglas de negocio de forma desacoplada. La idea es permitir
-            que decisiones como validaciones, scoring o evaluaciones de fraude puedan evolucionar con versionado,
-            trazabilidad y una arquitectura preparada para sistemas distribuidos.
-          </p>
-
-          <div class="project-arch">
-            <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
-              Decisiones de arquitectura
-            </p>
-
-            <div class="arch-list">
-              <span class="arch-item"
-                data-es="Rule Service y Decision Service desacoplados — cada uno con su responsabilidad"
-                data-en="Rule Service and Decision Service are decoupled — each with its own responsibility">
-                Rule Service y Decision Service desacoplados — cada uno con su responsabilidad
-              </span>
-
-              <span class="arch-item" data-es="Audit Service independiente con traceId para trazabilidad end-to-end"
-                data-en="Independent Audit Service with traceId for end-to-end traceability">
-                Audit Service independiente con traceId para trazabilidad end-to-end
-              </span>
-
-              <span class="arch-item" data-es="Versionado de reglas — cambios sin afectar decisiones históricas"
-                data-en="Rule versioning — changes without affecting historical decisions">
-                Versionado de reglas — cambios sin afectar decisiones históricas
-              </span>
-
-              <span class="arch-item" data-es="Explainability: cada decisión devuelve las reglas que la determinaron"
-                data-en="Explainability: each decision returns the rules that determined it">
-                Explainability: cada decisión devuelve las reglas que la determinaron
-              </span>
+          <!-- Carrusel Decision Platform -->
+          <div class="project-carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/decision-platform/decision-platform-1.png"
+                  alt="Decision Platform Swagger documentation screenshot" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/decision-platform/decision-platform-2.jpg"
+                  alt="Decision Platform Grafana dashboard screenshot" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/decision-platform/decision-platform-3.jpg"
+                  alt="Decision Platform architecture diagram screenshot" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/decision-platform/decision-platform-4.png"
+                  alt="Decision Platform architecture diagram screenshot" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/decision-platform/decision-platform-5.png"
+                  alt="Decision Platform architecture diagram screenshot" loading="lazy" />
+              </div>
             </div>
+            <button class="carousel-btn prev" aria-label="Imagen anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Imagen siguiente">&#8594;</button>
+            <div class="carousel-dots" role="tablist"></div>
           </div>
-          <div class="project-tech">
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">Spring Boot</span>
-            <span class="tech-tag">Microservices</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">Redis</span>
-            <span class="tech-tag">Kafka</span>
-            <span class="tech-tag">Keycloak</span>
-            <span class="tech-tag">Docker</span>
-          </div>
-        </div>
 
+          <p class="project-desc"
+  data-es="Plataforma backend basada en microservicios para gestionar reglas de negocio versionadas y evaluarlas de forma desacoplada. Permite publicar reglas, consumir eventos con Kafka, evaluar decisiones dinámicas y registrar auditoría con trazabilidad mediante traceId."
+  data-en="A microservices-based backend platform for managing versioned business rules and evaluating them in a decoupled way. It supports rule publishing, Kafka event consumption, dynamic decision evaluation, and audit logging with traceability through traceId.">
+  Plataforma backend basada en microservicios para gestionar reglas de negocio versionadas y evaluarlas de forma
+  desacoplada. Permite publicar reglas, consumir eventos con Kafka, evaluar decisiones dinámicas y registrar auditoría
+  con trazabilidad mediante traceId.
+</p>
+
+<div class="project-arch">
+  <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
+    Decisiones de arquitectura
+  </p>
+
+  <div class="arch-list">
+    <span class="arch-item"
+      data-es="rules-service como source of truth para drafts, publicación y versionado de reglas"
+      data-en="rules-service as the source of truth for drafts, publishing, and rule versioning">
+      rules-service como source of truth para drafts, publicación y versionado de reglas
+    </span>
+
+    <span class="arch-item"
+      data-es="decision-service desacoplado: consume eventos Kafka y evalúa reglas activas localmente"
+      data-en="decison-service is decoupled: it consumes Kafka events and evaluates active rules locally">
+      decision-service desacoplado: consume eventos Kafka y evalúa reglas activas localmente
+    </span>
+
+    <span class="arch-item"
+      data-es="Outbox Pattern para publicar eventos de forma confiable al confirmar cambios en base de datos"
+      data-en="Outbox Pattern to reliably publish events after database changes are committed">
+      Outbox Pattern para publicar eventos de forma confiable al confirmar cambios en base de datos
+    </span>
+
+    <span class="arch-item"
+      data-es="audit-service independiente para registrar decisiones, eventos y trazabilidad con traceId"
+      data-en="Independent audit-service for recording decisions, events, and traceability with traceId">
+      audit-service independiente para registrar decisiones, eventos y trazabilidad con traceId
+    </span>
+
+    <span class="arch-item"
+      data-es="Observabilidad con Spring Actuator, Prometheus y Grafana para métricas de servicios"
+      data-en="Observability with Spring Actuator, Prometheus, and Grafana for service metrics">
+      Observabilidad con Spring Actuator, Prometheus y Grafana para métricas de servicios
+    </span>
+  </div>
+</div>
+
+<div class="project-tech">
+  <span class="tech-tag">Java 21</span>
+  <span class="tech-tag">Spring Boot</span>
+  <span class="tech-tag">Microservices</span>
+  <span class="tech-tag">PostgreSQL</span>
+  <span class="tech-tag">Kafka</span>
+  <span class="tech-tag">Docker</span>
+  <span class="tech-tag">Docker Compose</span>
+  <span class="tech-tag">Prometheus</span>
+  <span class="tech-tag">Grafana</span>
+  <span class="tech-tag">OpenAPI</span>
+</div>
       </div>
     </div>
   </section>
@@ -691,6 +738,24 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- ─── PROJECT IMAGE LIGHTBOX ───────────────────────────────── -->
+<div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Cerrar imagen">
+    ×
+  </button>
+
+  <button class="lightbox-btn lightbox-prev" type="button" aria-label="Imagen anterior">
+    ←
+  </button>
+
+  <div class="lightbox-content">
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <button class="lightbox-btn lightbox-next" type="button" aria-label="Imagen siguiente">
+    →
+  </button>
+</div>
 </body>
 
 </html>
