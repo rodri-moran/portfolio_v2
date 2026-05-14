@@ -130,11 +130,15 @@
                   loading="lazy" />
               </div>
               <div class="carousel-slide">
-                <img class="carousel-img" src="assets/projects/civix/civix-2.png" alt="Civix urban reports view"
+                <img class="carousel-img" src="assets/projects/civix/civix-2.png" alt="Civix urban report view"
                   loading="lazy" />
               </div>
               <div class="carousel-slide">
-                <img class="carousel-img" src="assets/projects/civix/civix-3.png" alt="Civix authentication flow"
+                <img class="carousel-img" src="assets/projects/civix/civix-3.png" alt="Civix urban reports list"
+                  loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img class="carousel-img" src="assets/projects/civix/civix-4.png" alt="Civix statistics"
                   loading="lazy" />
               </div>
             </div>
@@ -321,65 +325,67 @@
           </div>
 
           <p class="project-desc"
-  data-es="Plataforma backend basada en microservicios para gestionar reglas de negocio versionadas y evaluarlas de forma desacoplada. Permite publicar reglas, consumir eventos con Kafka, evaluar decisiones dinámicas y registrar auditoría con trazabilidad mediante traceId."
-  data-en="A microservices-based backend platform for managing versioned business rules and evaluating them in a decoupled way. It supports rule publishing, Kafka event consumption, dynamic decision evaluation, and audit logging with traceability through traceId.">
-  Plataforma backend basada en microservicios para gestionar reglas de negocio versionadas y evaluarlas de forma
-  desacoplada. Permite publicar reglas, consumir eventos con Kafka, evaluar decisiones dinámicas y registrar auditoría
-  con trazabilidad mediante traceId.
-</p>
+            data-es="Plataforma backend basada en microservicios para gestionar reglas de negocio versionadas y evaluarlas de forma desacoplada. Permite publicar reglas, consumir eventos con Kafka, evaluar decisiones dinámicas y registrar auditoría con trazabilidad mediante traceId."
+            data-en="A microservices-based backend platform for managing versioned business rules and evaluating them in a decoupled way. It supports rule publishing, Kafka event consumption, dynamic decision evaluation, and audit logging with traceability through traceId.">
+            Plataforma backend basada en microservicios para gestionar reglas de negocio versionadas y evaluarlas de
+            forma
+            desacoplada. Permite publicar reglas, consumir eventos con Kafka, evaluar decisiones dinámicas y registrar
+            auditoría
+            con trazabilidad mediante traceId.
+          </p>
 
-<div class="project-arch">
-  <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
-    Decisiones de arquitectura
-  </p>
+          <div class="project-arch">
+            <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
+              Decisiones de arquitectura
+            </p>
 
-  <div class="arch-list">
-    <span class="arch-item"
-      data-es="rules-service como source of truth para drafts, publicación y versionado de reglas"
-      data-en="rules-service as the source of truth for drafts, publishing, and rule versioning">
-      rules-service como source of truth para drafts, publicación y versionado de reglas
-    </span>
+            <div class="arch-list">
+              <span class="arch-item"
+                data-es="rules-service como source of truth para drafts, publicación y versionado de reglas"
+                data-en="rules-service as the source of truth for drafts, publishing, and rule versioning">
+                rules-service como source of truth para drafts, publicación y versionado de reglas
+              </span>
 
-    <span class="arch-item"
-      data-es="decision-service desacoplado: consume eventos Kafka y evalúa reglas activas localmente"
-      data-en="decison-service is decoupled: it consumes Kafka events and evaluates active rules locally">
-      decision-service desacoplado: consume eventos Kafka y evalúa reglas activas localmente
-    </span>
+              <span class="arch-item"
+                data-es="decision-service desacoplado: consume eventos Kafka y evalúa reglas activas localmente"
+                data-en="decison-service is decoupled: it consumes Kafka events and evaluates active rules locally">
+                decision-service desacoplado: consume eventos Kafka y evalúa reglas activas localmente
+              </span>
 
-    <span class="arch-item"
-      data-es="Outbox Pattern para publicar eventos de forma confiable al confirmar cambios en base de datos"
-      data-en="Outbox Pattern to reliably publish events after database changes are committed">
-      Outbox Pattern para publicar eventos de forma confiable al confirmar cambios en base de datos
-    </span>
+              <span class="arch-item"
+                data-es="Outbox Pattern para publicar eventos de forma confiable al confirmar cambios en base de datos"
+                data-en="Outbox Pattern to reliably publish events after database changes are committed">
+                Outbox Pattern para publicar eventos de forma confiable al confirmar cambios en base de datos
+              </span>
 
-    <span class="arch-item"
-      data-es="audit-service independiente para registrar decisiones, eventos y trazabilidad con traceId"
-      data-en="Independent audit-service for recording decisions, events, and traceability with traceId">
-      audit-service independiente para registrar decisiones, eventos y trazabilidad con traceId
-    </span>
+              <span class="arch-item"
+                data-es="audit-service independiente para registrar decisiones, eventos y trazabilidad con traceId"
+                data-en="Independent audit-service for recording decisions, events, and traceability with traceId">
+                audit-service independiente para registrar decisiones, eventos y trazabilidad con traceId
+              </span>
 
-    <span class="arch-item"
-      data-es="Observabilidad con Spring Actuator, Prometheus y Grafana para métricas de servicios"
-      data-en="Observability with Spring Actuator, Prometheus, and Grafana for service metrics">
-      Observabilidad con Spring Actuator, Prometheus y Grafana para métricas de servicios
-    </span>
-  </div>
-</div>
+              <span class="arch-item"
+                data-es="Observabilidad con Spring Actuator, Prometheus y Grafana para métricas de servicios"
+                data-en="Observability with Spring Actuator, Prometheus, and Grafana for service metrics">
+                Observabilidad con Spring Actuator, Prometheus y Grafana para métricas de servicios
+              </span>
+            </div>
+          </div>
 
-<div class="project-tech">
-  <span class="tech-tag">Java 21</span>
-  <span class="tech-tag">Spring Boot</span>
-  <span class="tech-tag">Microservices</span>
-  <span class="tech-tag">PostgreSQL</span>
-  <span class="tech-tag">Kafka</span>
-  <span class="tech-tag">Docker</span>
-  <span class="tech-tag">Docker Compose</span>
-  <span class="tech-tag">Prometheus</span>
-  <span class="tech-tag">Grafana</span>
-  <span class="tech-tag">OpenAPI</span>
-</div>
+          <div class="project-tech">
+            <span class="tech-tag">Java 21</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Microservices</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Docker Compose</span>
+            <span class="tech-tag">Prometheus</span>
+            <span class="tech-tag">Grafana</span>
+            <span class="tech-tag">OpenAPI</span>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
 
   <!-- ─── SKILLS ────────────────────────────────────────────────── -->
@@ -739,23 +745,23 @@
 
   <script src="script.js"></script>
   <!-- ─── PROJECT IMAGE LIGHTBOX ───────────────────────────────── -->
-<div class="image-lightbox" id="imageLightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button" aria-label="Cerrar imagen">
-    ×
-  </button>
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Cerrar imagen">
+      ×
+    </button>
 
-  <button class="lightbox-btn lightbox-prev" type="button" aria-label="Imagen anterior">
-    ←
-  </button>
+    <button class="lightbox-btn lightbox-prev" type="button" aria-label="Imagen anterior">
+      ←
+    </button>
 
-  <div class="lightbox-content">
-    <img class="lightbox-img" src="" alt="">
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <button class="lightbox-btn lightbox-next" type="button" aria-label="Imagen siguiente">
+      →
+    </button>
   </div>
-
-  <button class="lightbox-btn lightbox-next" type="button" aria-label="Imagen siguiente">
-    →
-  </button>
-</div>
 </body>
 
 </html>
