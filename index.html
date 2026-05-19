@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodrigo Moran — Full Developer</title>
+  <title>Rodrigo Moran — Backend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@300;400;500;600;700&display=swap"
@@ -31,7 +31,7 @@
         <button class="lang-btn" data-lang="en" type="button">EN</button>
       </div>
 
-      <a href="./assets/cv/FullStack_CV_EN_RodrigoMoran.pdf" target="_blank" class="nav-cv">
+      <a href="./assets/cv/Backend_CV_ES_RodrigoMoran.pdf" target="_blank" class="nav-cv">
         CV
       </a>
     </div>
@@ -49,11 +49,12 @@
         Backend Developer · Full Stack con foco en Java y Spring Boot
       </p>
       <p class="hero-desc"
-        data-es="Desarrollo aplicaciones backend con foco en arquitectura, APIs REST y código mantenible. Me interesa construir sistemas bien pensados, que puedan crecer, integrarse con otros servicios y seguir siendo claros de mantener con el tiempo."
-        data-en="I build backend applications with a focus on architecture, REST APIs, and maintainable code. I'm interested in designing well-structured systems that can grow, integrate with other services, and remain easy to understand and maintain over time.">
-        Desarrollo aplicaciones backend con foco en arquitectura, APIs REST y código mantenible. Me interesa construir
-        sistemas bien pensados, que puedan crecer, integrarse con otros servicios y seguir siendo claros de mantener con
-        el tiempo.
+        data-es="Desarrollo backends con Java y Spring Boot, creando APIs REST, microservicios y sistemas con PostgreSQL, Docker y buenas prácticas de arquitectura. Me enfoco en construir soluciones mantenibles, seguras e integrables con otros servicios."
+        data-en="I build backends with Java and Spring Boot, creating REST APIs, microservices, and systems with PostgreSQL, Docker, and good architecture practices. I focus on building maintainable, secure solutions that can integrate with other services.">
+        Desarrollo backends con Java y Spring Boot, creando APIs REST, microservicios y sistemas con PostgreSQL, Docker
+        y buenas prácticas de arquitectura. Me enfoco en construir soluciones mantenibles, seguras e integrables con
+        otros servicios.
+      </p>s servicios.
       </p>
       <div class="hero-stack">
         <span class="stack-pill">Java</span>
@@ -148,12 +149,57 @@
           </div>
 
           <p class="project-desc"
-            data-es="Plataforma pensada para que ciudadanos reporten problemas urbanos a su municipio, como baches, luminarias o incidencias en la vía pública. El proyecto fue una oportunidad para trabajar una arquitectura basada en microservicios, con servicios desacoplados, bases de datos separadas y una estructura preparada para crecer."
-            data-en="A platform designed for citizens to report urban issues to their municipality, such as potholes, street lighting problems, or public infrastructure incidents. This project was an opportunity to work with a microservices-based architecture, with decoupled services, separate databases, and a structure prepared to scale.">
-            Plataforma pensada para que ciudadanos reporten problemas urbanos a su municipio, como baches, luminarias o
-            incidencias en la vía pública. El proyecto fue una oportunidad para trabajar una arquitectura basada en
-            microservicios, con servicios desacoplados, bases de datos separadas y una estructura preparada para crecer.
+            data-es="Plataforma municipal para reportar, gestionar y dar seguimiento a incidentes urbanos. Implementé un backend basado en microservicios con Spring Boot, API Gateway, autenticación JWT, control de roles, servicios desacoplados y persistencia en PostgreSQL. El proyecto también incluyó despliegue en Render, configuración de CORS, variables de entorno y adaptación de bases de datos separadas a una única instancia PostgreSQL con schemas."
+            data-en="A municipal platform for reporting, managing, and tracking urban incidents. I implemented a microservices-based backend with Spring Boot, API Gateway, JWT authentication, role-based access control, decoupled services, and PostgreSQL persistence. The project also included deployment on Render, CORS configuration, environment variables, and adapting separate databases into a single PostgreSQL instance using schemas.">
+            Plataforma municipal para reportar, gestionar y dar seguimiento a incidentes urbanos. Implementé un backend
+            basado en microservicios con Spring Boot, API Gateway, autenticación JWT, control de roles, servicios
+            desacoplados y persistencia en PostgreSQL. El proyecto también incluyó despliegue en Render, configuración
+            de CORS, variables de entorno y adaptación de bases de datos separadas a una única instancia PostgreSQL con
+            schemas.
           </p>
+
+          <div class="project-demo">
+            <div class="project-demo-header">
+              <div>
+                <p class="project-demo-title" data-es="Demo disponible" data-en="Live demo available">
+                  Demo disponible
+                </p>
+                <p class="project-demo-desc"
+                  data-es="Podés probar la aplicación con usuarios precargados. Cada rol cuenta con vistas, permisos y funcionalidades diferentes."
+                  data-en="You can test the application with preloaded users. Each role has different views, permissions, and features.">
+                  Podés probar la aplicación con usuarios precargados. Cada rol cuenta con vistas, permisos y
+                  funcionalidades diferentes.
+                </p>
+              </div>
+
+              <a href="https://civix-delta.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-demo-btn">
+                <span data-es="Abrir demo" data-en="Open demo">Abrir demo</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="demo-users">
+              <div class="demo-user">
+                <span class="demo-role" data-es="Ciudadano" data-en="Citizen">Ciudadano</span>
+                <span class="demo-field">user@test.com</span>
+                <span class="demo-pass">demo123</span>
+              </div>
+
+              <div class="demo-user">
+                <span class="demo-role" data-es="Administrador" data-en="Administrator">Administrador</span>
+                <span class="demo-field">admin@test.com</span>
+                <span class="demo-pass">demo123</span>
+              </div>
+
+              <div class="demo-user">
+                <span class="demo-role" data-es="Supervisor de cuadrilla" data-en="Squad supervisor">Supervisor de
+                  cuadrilla</span>
+                <span class="demo-field">squad@test.com</span>
+                <span class="demo-pass">demo123</span>
+              </div>
+            </div>
+          </div>
 
           <div class="project-arch">
             <p class="project-arch-title" data-es="Decisiones de arquitectura" data-en="Architecture decisions">
@@ -161,8 +207,13 @@
             </p>
             <div class="arch-list">
               <span class="arch-item" data-es="API Gateway centraliza autenticación y enrutamiento"
-                data-en="API Gateway centralizes authentication and routing">API Gateway centraliza autenticación y
+                data-en="API Gateway centralizes authentication and routing">API Gateway centraliza
                 enrutamiento</span>
+              <span class="arch-item"
+                data-es="Despliegue en Render adaptando la arquitectura local a servicios cloud y schemas PostgreSQL"
+                data-en="Deployment on Render, adapting the local architecture to cloud services and PostgreSQL schemas">
+                Despliegue en Render adaptando la arquitectura local a servicios cloud y schemas PostgreSQL
+              </span>
               <span class="arch-item" data-es="Auth Service independiente con JWT — no acoplado al negocio"
                 data-en="Independent Auth Service using JWT — not coupled to business logic">Auth Service independiente
                 con JWT — no acoplado al negocio</span>
@@ -170,9 +221,11 @@
                 data-es="User Service y Report Service con bases de datos separadas (PostgreSQL por servicio)"
                 data-en="User Service and Report Service with separate databases (PostgreSQL per service)">User Service
                 y Report Service con bases de datos separadas (PostgreSQL por servicio)</span>
-              <span class="arch-item" data-es="Docker Compose orquesta el ambiente completo con un solo comando"
-                data-en="Docker Compose orchestrates the entire environment with a single command">Docker Compose
-                orquesta el ambiente completo con un solo comando</span>
+              <span class="arch-item"
+                data-es="Docker Compose para levantar localmente servicios y bases de datos del entorno completo"
+                data-en="Docker Compose to run the full local environment, including services and databases">
+                Docker Compose para levantar localmente servicios y bases de datos del entorno completo
+              </span>
               <span class="arch-item" data-es="Contratos via DTOs — ningún servicio expone entidades internas"
                 data-en="Contracts via DTOs — no service exposes internal entities">Contratos via DTOs — ningún servicio
                 expone entidades internas</span>
@@ -235,30 +288,37 @@
           </div>
 
           <p class="project-desc"
-            data-es="Aplicación para gestionar propiedades y alquileres temporales desde un solo lugar: permite registrar inmuebles, administrar reservas, manejar imágenes y centralizar la información del negocio. El backend está desarrollado en Spring Boot con APIs REST y arquitectura en capas, mientras que el frontend en Angular permite una interacción fluida y desacoplada del dominio."
-            data-en="An application to manage properties and short-term rentals from a single place: it allows registering properties, managing bookings, handling images, and centralizing business data. The backend is built with Spring Boot using REST APIs and layered architecture, while the Angular frontend provides a smooth and decoupled user experience.">
-            Aplicación para gestionar propiedades y alquileres temporales desde un solo lugar: permite registrar
-            inmuebles, administrar reservas, manejar imágenes y centralizar la información del negocio. El backend está
-            desarrollado en Spring Boot con APIs REST y arquitectura en capas, mientras que el frontend en Angular
-            permite una interacción fluida y desacoplada del dominio.
+            data-es="Sistema interno para administrar propiedades y reservas temporarias. Desarrollé APIs REST con Spring Boot, PostgreSQL y JPA/Hibernate, aplicando arquitectura en capas, DTOs y validaciones backend. Implementé lógica de negocio para disponibilidad por fechas, prevención de reservas superpuestas, cálculo de noches, importes, señas, saldos y manejo persistente de imágenes."
+            data-en="An internal system for managing properties and short-term rentals. I developed REST APIs with Spring Boot, PostgreSQL, and JPA/Hibernate, applying layered architecture, DTOs, and backend validations. I implemented business logic for date-based availability, prevention of overlapping bookings, automatic calculation of nights, amounts, deposits, remaining balances, and persistent image handling.">
+            Sistema interno para administrar propiedades y reservas temporarias. Desarrollé APIs REST con Spring Boot,
+            PostgreSQL y JPA/Hibernate, aplicando arquitectura en capas, DTOs y validaciones backend. Implementé lógica
+            de negocio para disponibilidad por fechas, prevención de reservas superpuestas, cálculo de noches, importes,
+            señas, saldos y manejo persistente de imágenes.
           </p>
 
           <div class="project-arch">
-            <p class="project-arch-title" data-es="Stack técnico" data-en="Technical stack">Stack técnico</p>
+            <p class="project-arch-title" data-es="Stack técnico" data-en="Technical stack">Backend Implementation</p>
             <div class="arch-list">
               <span class="arch-item"
-                data-es="Spring Boot con arquitectura por capas (Controller / Service / Repository)"
-                data-en="Spring Boot with layered architecture (Controller / Service / Repository)">Spring Boot con
-                arquitectura por capas (Controller / Service / Repository)</span>
-              <span class="arch-item" data-es="DTOs como contratos entre capas — sin exponer entidades JPA"
-                data-en="DTOs as contracts between layers — without exposing JPA entities">DTOs como contratos entre
-                capas — sin exponer entidades JPA</span>
-              <span class="arch-item" data-es="Angular con Signals y standalone components (no NgModules)"
-                data-en="Angular with Signals and standalone components (no NgModules)">Angular con Signals y standalone
-                components (no NgModules)</span>
-              <span class="arch-item" data-es="Subida y manejo de imágenes con almacenamiento persistente"
-                data-en="Image upload and management with persistent storage">Subida y manejo de imágenes con
-                almacenamiento persistente</span>
+                data-es="APIs REST con Spring Boot para propiedades, reservas, usuarios e imágenes"
+                data-en="REST APIs with Spring Boot for properties, bookings, users, and images">
+                APIs REST con Spring Boot para propiedades, reservas, usuarios e imágenes
+              </span>
+
+              <span class="arch-item" data-es="Validación de disponibilidad y prevención de reservas superpuestas"
+                data-en="Availability validation and prevention of overlapping bookings">
+                Validación de disponibilidad y prevención de reservas superpuestas
+              </span>
+
+              <span class="arch-item" data-es="Cálculo automático de noches, precio total, seña y saldo restante"
+                data-en="Automatic calculation of nights, total price, deposit, and remaining balance">
+                Cálculo automático de noches, precio total, seña y saldo restante
+              </span>
+
+              <span class="arch-item" data-es="DTOs y arquitectura por capas para separar API, negocio y persistencia"
+                data-en="DTOs and layered architecture to separate API, business logic, and persistence">
+                DTOs y arquitectura por capas para separar API, negocio y persistencia
+              </span>
             </div>
           </div>
 
@@ -446,12 +506,12 @@
                 <span class="skill-name" data-es="Microservicios" data-en="Microservices">
                   Microservicios
                 </span>
-                <span class="skill-level" data-es="Intermedio" data-en="Intermediate">
-                  Intermedio
+                <span class="skill-level" data-es="Avanzado" data-en="Advanced">
+                  Avanzado
                 </span>
               </div>
               <div class="skill-bar">
-                <div class="skill-bar-fill" style="width:72%"></div>
+                <div class="skill-bar-fill" style="width:85%"></div>
               </div>
             </div>
 
@@ -619,65 +679,57 @@
             Quién soy
           </h2>
 
-          <p data-es="Soy egresado de la Tecnicatura Universitaria en Programación (UTN Córdoba) y vengo construyendo proyectos donde priorizo no solo que algo funcione, sino también cómo está diseñado por dentro."
-            data-en="I graduated from the University Programming Degree (UTN Córdoba), and I’ve been building projects where I focus not only on making things work, but also on how they are designed internally.">
-            Soy egresado de la <strong>Tecnicatura Universitaria en Programación (UTN Córdoba)</strong> y vengo
-            construyendo proyectos donde priorizo no solo que algo funcione, sino también cómo está diseñado por dentro.
+          <p data-es="Soy Técnico Universitario en Programación por la UTN Córdoba y desarrollo proyectos con foco en backend, APIs REST, bases de datos y arquitectura de software."
+            data-en="I hold a University Technician degree in Programming from UTN Córdoba, and I build projects focused on backend development, REST APIs, databases, and software architecture.">
+            Soy Técnico Universitario en Programación por la UTN Córdoba y desarrollo proyectos con foco en backend,
+            APIs REST, bases de datos y arquitectura de software.
           </p>
 
-          <p data-es="Me interesa especialmente el backend porque disfruto pensar la estructura de los sistemas: cómo circulan los datos, cómo se definen los contratos entre servicios y qué decisiones técnicas hacen que una aplicación sea más clara, mantenible y escalable."
-            data-en="I'm especially interested in backend development because I enjoy thinking about system design: how data flows, how contracts between services are defined, and which technical decisions make an application clearer, more maintainable, and scalable.">
-            Me interesa especialmente el backend porque disfruto pensar la estructura de los sistemas: cómo circulan los
-            datos, cómo se definen los contratos entre servicios y qué decisiones técnicas hacen que una aplicación sea
-            más clara, mantenible y escalable.
+          <p data-es="Me interesa especialmente el backend porque combina diseño de sistemas, reglas de negocio, persistencia, seguridad e integración entre servicios. En mis proyectos busco separar responsabilidades, trabajar con contratos claros mediante DTOs y mantener una estructura fácil de entender y evolucionar."
+            data-en="I am especially interested in backend development because it combines system design, business rules, persistence, security, and integration between services. In my projects, I focus on separating responsibilities, working with clear contracts through DTOs, and keeping a structure that is easy to understand and evolve.">
+            Me interesa especialmente el backend porque combina diseño de sistemas, reglas de negocio, persistencia,
+            seguridad e integración entre servicios. En mis proyectos busco separar responsabilidades, trabajar con
+            contratos claros mediante DTOs y mantener una estructura fácil de entender y evolucionar.
           </p>
 
-          <p data-es="Actualmente también estoy comenzando un curso anual de inglés en la Facultad de Lenguas (UNC) para mejorar mi nivel y poder trabajar en entornos técnicos donde el idioma es clave."
-            data-en="I am currently starting a year-long English course at the Faculty of Languages (UNC) to improve my level and be able to work in technical environments where the language is essential.">
-            Actualmente también estoy comenzando un curso anual de inglés en la Facultad de Lenguas (UNC) para mejorar
-            mi nivel y poder trabajar en entornos técnicos donde el idioma es clave.
-          </p>
-
-          <p data-es="Estoy buscando mi primera oportunidad profesional en IT para seguir creciendo dentro de un equipo, aprender de entornos reales de desarrollo y aportar desde el primer día con una base sólida en Java, Spring Boot, SQL y diseño de APIs."
-            data-en="I’m looking for my first professional opportunity in IT to continue growing within a team, learn from real development environments, and contribute from day one with a solid foundation in Java, Spring Boot, SQL, and API design.">
-            Estoy buscando mi primera oportunidad profesional en IT para seguir creciendo dentro de un equipo, aprender
-            de entornos reales de desarrollo y aportar desde el primer día con una base sólida en Java, Spring Boot, SQL
-            y diseño de APIs.
+          <p data-es="Actualmente busco mi primera oportunidad profesional en IT, especialmente en roles backend o full stack con foco en Java, Spring Boot, SQL y diseño de APIs."
+            data-en="I am currently looking for my first professional opportunity in IT, especially in backend or full stack roles focused on Java, Spring Boot, SQL, and API design.">
+            Actualmente busco mi primera oportunidad profesional en IT, especialmente en roles backend o full stack con
+            foco en Java, Spring Boot, SQL y diseño de APIs.
           </p>
         </div>
 
         <div class="about-stats fade-in">
 
           <div class="stat-card">
-            <div class="stat-num">3+</div>
-            <div class="stat-label" data-es="Tecnologías frontend" data-en="Frontend technologies">
-              Tecnologías frontend
+            <div class="stat-num">Java</div>
+            <div class="stat-label" data-es="Backend principal" data-en="Main backend">
+              Backend principal
             </div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-num">UTN</div>
-            <div class="stat-label" data-es="Graduado Córdoba" data-en="Graduated — Córdoba">
-              Graduado Córdoba
+            <div class="stat-num">Spring Boot</div>
+            <div class="stat-label" data-es="APIs REST" data-en="APIs REST">
+              APIs REST
             </div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-num">5+</div>
-            <div class="stat-label" data-es="Tecnologías backend" data-en="Backend technologies">
-              Tecnologías backend
+            <div class="stat-num">SQL</div>
+            <div class="stat-label" data-es="Persistencia" data-en="Persistence">
+              Persistencia
             </div>
           </div>
 
           <div class="stat-card">
-            <div class="stat-num">CBA</div>
-            <div class="stat-label" data-es="Córdoba, Argentina" data-en="Córdoba, Argentina">
-              Córdoba, Argentina
+            <div class="stat-num">Docker</div>
+            <div class="stat-label" data-es="Entornos locales" data-en="Local environment">
+              Entornos locales
             </div>
           </div>
 
         </div>
-
       </div>
     </div>
   </section>

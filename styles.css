@@ -898,3 +898,110 @@ footer {
     right: .6rem;
   }
 }
+
+/* ─── PROJECT DEMO ACCESS ─────────────────────────────────────── */
+.project-demo {
+  background: linear-gradient(135deg, rgba(16,185,129,.08), rgba(16,185,129,.03));
+  border: 1px solid rgba(16,185,129,.18);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.project-demo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-demo-title {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--green-dk);
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+
+.project-demo-desc {
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.65;
+  max-width: 680px;
+}
+
+.project-demo-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .65rem 1rem;
+  border-radius: var(--radius);
+  background: var(--green);
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(16,185,129,.25);
+  transition: background .2s, transform .15s, box-shadow .2s;
+}
+
+.project-demo-btn:hover {
+  background: var(--green-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(16,185,129,.3);
+}
+
+.demo-users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+}
+
+.demo-user {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: .85rem;
+  display: flex;
+  flex-direction: column;
+  gap: .28rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.demo-role {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: .15rem;
+}
+
+.demo-field,
+.demo-pass {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--muted);
+  word-break: break-word;
+}
+
+.demo-pass {
+  color: var(--green-dk);
+}
+
+@media (max-width: 768px) {
+  .project-demo-header {
+    flex-direction: column;
+  }
+
+  .project-demo-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .demo-users {
+    grid-template-columns: 1fr;
+  }
+}
